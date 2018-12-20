@@ -264,7 +264,11 @@ public class KitchenSinkController {
                                 this.reply(
                                         replyToken,
                                         Arrays.asList(new TextMessage(
+                                                              "Display id: " + userId),
+                                                      new TextMessage(
                                                               "Display name: " + profile.getDisplayName()),
+                                                      new TextMessage(
+                                                              "Display reply Token: " + replyToken),
                                                       new TextMessage("Status message: "
                                                                       + profile.getStatusMessage()))
                                 );
